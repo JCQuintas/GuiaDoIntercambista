@@ -47,4 +47,5 @@
     <string name="country">Holanda</string>
     <string name="exchange_qty">46 intercambistas</string>
     <string name="university_qty">6 universidades cadastradas</string>
+    <string name="title_activity_universities">Universidades</string>
 </resources>

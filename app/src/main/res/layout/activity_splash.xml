@@ -16,7 +16,7 @@
         android:tint="@color/colorAccent"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:padding="50dp" />
+        android:padding="150dp" />
     <ImageView
         android:id="@+id/outside"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:tint="@color/colorAccent"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:padding="50dp" />
+        android:padding="150dp" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -14,9 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/gray"
-        android:clipToPadding="false"
-        android:elevation="2dp">
+        android:background="@color/gray">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -86,7 +84,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/listView"
             android:entries="@array/country_subcategories"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
             android:background="@color/white"
             android:clipToPadding="false"
             android:elevation="2dp"/>

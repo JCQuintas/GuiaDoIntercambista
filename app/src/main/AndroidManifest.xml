@@ -16,7 +16,7 @@
         <activity
             android:name=".SignupActivity"
             android:label="@string/app_name"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -31,11 +31,20 @@
         <activity
             android:name=".SelectCountryActivity"
             android:label="@string/title_activity_select_country"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UniversitiesActivity"
+            android:label="@string/title_activity_universities"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.quintas.guiadointercambista.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

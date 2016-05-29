@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#00E676</color>
     <color name="colorAccentLight">#69F0AE</color>
+    <color name="colorAccentAlternate">#FFC400</color>
 
     <color name="white">#FFFFFF</color>
     <color name="facebookBlue">#3B5999</color>
@@ -11,5 +12,5 @@
     <color name="black">#000000</color>
 
     <color name="black_overlay">#66000000</color>
-    <color name="gray">#FFCCCCCC</color>
+    <color name="gray">#FFEEEEEE</color>
 </resources>
