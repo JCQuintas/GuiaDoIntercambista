@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="countries_array">
+        <item>Alemanha</item>
+        <item>Argentina</item>
+        <item>Bolívia</item>
+        <item>Brasil</item>
+        <item>Bulgária</item>
+        <item>Bélgica</item>
+        <item>Chile</item>
+        <item>Chipre</item>
+        <item>Colômbia</item>
+        <item>Croácia</item>
+        <item>Dinamarca</item>
+        <item>Equador</item>
+        <item>Eslovenia</item>
+        <item>Eslováquia</item>
+        <item>Espanha</item>
+        <item>Estônia</item>
+        <item>Finlândia</item>
+        <item>França</item>
+        <item>Grécia</item>
+        <item>Guiana</item>
+        <item>Holanda</item>
+        <item>Hungria</item>
+        <item>Irlanda</item>
+        <item>Itália</item>
+        <item>Letônia</item>
+        <item>Lituânia</item>
+        <item>Luxemburgo</item>
+        <item>Malta</item>
+        <item>Paraguai</item>
+        <item>Peru</item>
+        <item>Polônia</item>
+        <item>Portugal</item>
+        <item>Reino Unido</item>
+        <item>República Checa</item>
+        <item>Romênia</item>
+        <item>Suriname</item>
+        <item>Suécia</item>
+        <item>Uruguai</item>
+        <item>Venezuela</item>
+        <item>Áustria</item>
+    </string-array>
+
+    <string-array name="country_subcategories">
+        <item>Universidades</item>
+        <item>Serviços</item>
+        <item>Cidades</item>
+        <item>Idioma</item>
+        <item>Feriados</item>
+        <item>Clima</item>
+    </string-array>
+
+</resources>

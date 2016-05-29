@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.quintas.guiadointercambista.SplashActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/inside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_guia_inside"
+        android:tint="@color/colorAccent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="50dp" />
+    <ImageView
+        android:id="@+id/outside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_guia_outside"
+        android:tint="@color/colorAccent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="50dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp" />
+
+</FrameLayout>
