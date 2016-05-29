@@ -82,7 +82,7 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listView"
+            android:id="@+id/mainListView"
             android:entries="@array/country_subcategories"
             android:layout_margin="10dp"
             android:background="@color/white"

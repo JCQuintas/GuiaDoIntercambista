@@ -48,4 +48,10 @@
     <string name="exchange_qty">46 intercambistas</string>
     <string name="university_qty">6 universidades cadastradas</string>
     <string name="title_activity_universities">Universidades</string>
+    <string name="university_name">Hogeschool van Amsterdam</string>
+    <string name="university_city">Amsterdam</string>
+    <string name="student_amount">16</string>
+    <string name="courses_amount">20</string>
+    <string name="title_activity_university_detail">UniversityDetailActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
