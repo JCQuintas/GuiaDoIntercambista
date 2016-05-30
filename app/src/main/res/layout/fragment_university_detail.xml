@@ -1,138 +1,513 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.quintas.guiadointercambista.UniversityDetailActivity$PlaceholderFragment">
 
-    <ImageView
-        android:id="@+id/university_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/university_drawable"
-        android:background="@color/white"
-        android:scaleType="centerCrop"
-        android:cropToPadding="false"
-        android:elevation="2dp"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            style="@style/child_padding">
+            android:orientation="vertical">
 
-            <TextView
-                style="@style/TextAppearance.AppCompat.Title"
-                android:id="@+id/university_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/university_name"
-                android:layout_marginTop="10dp"
-                android:textSize="25sp"/>
+            <ImageView
+                android:id="@+id/university_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:cropToPadding="false"
+                android:elevation="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/university_drawable"/>
 
             <LinearLayout
+                style="@style/child_padding"
+                android:layout_marginBottom="75dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        style="@style/icon_university"
-                        android:src="@drawable/ic_student"
-                        android:id="@+id/imageView2"/>
-
-                    <TextView
-                        android:id="@+id/student_amount"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="@style/university_icon_text"
-                        android:text="@string/student_amount_full"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_marginStart="20dp">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    style="@style/icon_university"
-                    android:src="@drawable/ic_course"
-                    android:id="@+id/imageView3" />
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/courses_amount"
+                    android:id="@+id/university_name"
+                    style="@style/TextAppearance.AppCompat.Title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/university_icon_text"
-                    android:text="@string/courses_amount_full"/>
+                    android:layout_marginTop="10dp"
+                    android:text="@string/university_name"
+                    android:textSize="25sp"/>
 
-            </LinearLayout>
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="80dp"
-                    android:orientation="vertical"
-                    android:layout_weight="1"
-                    android:layout_marginStart="20dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        style="@style/icon_university"
-                        android:src="@drawable/ic_city"
-                        android:id="@+id/imageView4" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/city"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="@style/university_icon_text"
-                        android:text="@string/city"/>
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            style="@style/icon_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_student"/>
+
+                        <TextView
+                            android:id="@+id/student_amount"
+                            style="@style/university_icon_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/student_amount_full"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            style="@style/icon_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_course" />
+
+                        <TextView
+                            android:id="@+id/courses_amount"
+                            style="@style/university_icon_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/courses_amount_full"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            style="@style/icon_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_city" />
+
+                        <TextView
+                            android:id="@+id/city"
+                            style="@style/university_icon_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/city"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/gray_overlay"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/black_text_hard"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black_text_hard"
+                    android:text="@string/university_description" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray_overlay"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/marcela"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/user_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black_text_hard"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate_this_university"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:layout_gravity="center"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_marginTop="5dp"
+                    android:numStars="5"
+                    android:stepSize="10"
+                    android:rating="0"
+                    android:progressTint="#FFD740"
+                    android:secondaryProgressTint="@android:color/transparent"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray_overlay"/>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ratings_title"
+                    android:textColor="@color/black_text_hard"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/review_user_img"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/marcos"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/ic_thumb_down"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:src="@drawable/ic_thumb_up"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/review_user_name"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black_text_hard"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:src="@drawable/ic_report"/>
+
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingShow1"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_marginTop="5dp"
+                            android:numStars="5"
+                            android:stepSize="10"
+                            android:rating="5"
+                            android:progressTint="@color/black_text_medium"
+                            android:secondaryProgressTint="@android:color/transparent"/>
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_text_hard"
+                            android:text="@string/review_text1" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/review_user_img2"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/amanda"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/ic_thumb_down"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:src="@drawable/ic_thumb_up"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Amanda Nobre"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black_text_hard"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:src="@drawable/ic_report"/>
+
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingShow2"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_marginTop="5dp"
+                            android:numStars="5"
+                            android:stepSize="10"
+                            android:rating="4"
+                            android:progressTint="@color/black_text_medium"
+                            android:secondaryProgressTint="@android:color/transparent"/>
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_text_hard"
+                            android:text="@string/review_text2" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/review_user_img3"
+                            android:layout_width="65dp"
+                            android:layout_height="65dp"
+                            android:src="@drawable/renata"
+                            android:layout_gravity="center"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/ic_thumb_down"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:src="@drawable/ic_thumb_up"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:text="Renata Lima"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="@color/black_text_hard"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:tint="@color/gray"
+                                android:src="@drawable/ic_report"/>
+
+                        </LinearLayout>
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingShow3"
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:layout_marginTop="5dp"
+                            android:numStars="5"
+                            android:stepSize="10"
+                            android:rating="2"
+                            android:progressTint="@color/black_text_medium"
+                            android:secondaryProgressTint="@android:color/transparent"/>
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black_text_hard"
+                            android:text="@string/review_text3" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:textAllCaps="true"/>
+
             </LinearLayout>
-
-            <View
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray_overlay"/>
-
-            <TextView
-                style="@style/TextAppearance.AppCompat.Subhead"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/description" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/university_description"
-                android:layout_marginTop="10dp"
-                style="@style/TextAppearance.AppCompat.Body1" />
-
-            <View
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/gray_overlay"/>
-
-
 
         </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

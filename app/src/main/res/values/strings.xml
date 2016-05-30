@@ -63,4 +63,11 @@
     <string name="student_amount_full">16\nintercambistas</string>
     <string name="courses_amount_full">20\ncursos</string>
     <string name="city"> \nAmsterdam</string>
+    <string name="rate_this_university">Avalie esta universidade</string>
+    <string name="ratings_title">Avaliações</string>
+    <string name="review_user_name">Marcos Almeida</string>
+    <string name="review_text1">Gostei muito da universidade. Passei 1 ano estudando Ciência da Computação. A cidade é linda e os professores são demais.</string>
+    <string name="review_text2">A Holanda é sensacional! Tive aulas de design em dois campis da universidade e são muito bons.</string>
+    <string name="review_text3">Não gostei das aulas, alguns professores davam metade da aula em holandês e os intercambistas não entendiam nada.</string>
+    <string name="read_more">Ler mais</string>
 </resources>

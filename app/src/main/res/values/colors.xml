@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#00E676</color>
+    <color name="colorPrimary2">#1565C0</color>
+    <color name="colorPrimary">#007acc</color>
+    <color name="colorPrimaryDark2">#0D47A1</color>
+    <color name="colorPrimaryDark">#0072b2</color>
+    <color name="colorAccent">#00C853</color>
     <color name="colorAccentLight">#69F0AE</color>
     <color name="colorAccentAlternate">#FFC400</color>
 
@@ -12,6 +14,10 @@
     <color name="black">#000000</color>
 
     <color name="black_overlay">#66000000</color>
+    <color name="black_text_hard">#DB000000</color>
+    <color name="black_text_medium">#8B000000</color>
+    <color name="black_text_light">#64000000</color>
     <color name="gray_overlay">#10000000</color>
-    <color name="gray">#FFEEEEEE</color>
+    <color name="gray_light">#FFEEEEEE</color>
+    <color name="gray">#FFBBBBBB</color>
 </resources>

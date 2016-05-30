@@ -8,13 +8,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.quintas.guiadointercambista.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:background="@color/gray">
+    android:background="@color/gray_light">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/gray">
+        android:background="@color/gray_light">
 
         <FrameLayout
             android:layout_width="match_parent"
