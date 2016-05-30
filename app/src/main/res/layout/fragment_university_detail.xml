@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.quintas.guiadointercambista.UniversityDetailActivity$PlaceholderFragment">
+    tools:context="com.quintas.guiadointercambista.UniversityDetailActivity$PlaceholderFragment"
+    android:nestedScrollingEnabled="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +23,7 @@
 
             <LinearLayout
                 style="@style/child_padding"
-                android:layout_marginBottom="75dp"
+                android:layout_marginBottom="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -116,8 +117,8 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
                     android:background="@color/gray_overlay"/>
 
                 <TextView

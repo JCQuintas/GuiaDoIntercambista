@@ -52,7 +52,7 @@
     <string name="university_city">Amsterdam</string>
     <string name="student_amount">16</string>
     <string name="courses_amount">20</string>
-    <string name="title_activity_university_detail">Hogeschool van Amsterdam</string>
+    <string name="title_activity_university_detail"> </string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="university_description">A Hogeschool van Amsterdam ou Universidade de Ciências
         Aplicadas de Amsterdam (HVA) é a maior instituição de ensino superior profissional na

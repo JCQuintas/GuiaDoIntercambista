@@ -27,8 +27,7 @@
     </style>
 
     <style name="icon_university">
-        <item name="android:alpha">0.75</item>
-        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:tint">@color/gray</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_weight">1</item>
     </style>
