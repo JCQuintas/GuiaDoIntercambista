@@ -51,13 +51,11 @@
                 android:orientation="vertical"
                 android:paddingBottom="100dp">
 
-                <Spinner
+                <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:id="@+id/spinner"
-                    android:entries="@array/countries_array"
-                    android:spinnerMode="dialog"
-                    />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/country_select_text" />
+
 
                 <Button
                     android:id="@+id/country_select_button"

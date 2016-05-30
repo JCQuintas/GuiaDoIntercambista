@@ -1,16 +1,138 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.quintas.guiadointercambista.UniversityDetailActivity$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/university_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/university_drawable"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        android:cropToPadding="false"
+        android:elevation="2dp"/>
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            style="@style/child_padding">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Title"
+                android:id="@+id/university_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/university_name"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/icon_university"
+                        android:src="@drawable/ic_student"
+                        android:id="@+id/imageView2"/>
+
+                    <TextView
+                        android:id="@+id/student_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/university_icon_text"
+                        android:text="@string/student_amount_full"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    style="@style/icon_university"
+                    android:src="@drawable/ic_course"
+                    android:id="@+id/imageView3" />
+
+                <TextView
+                    android:id="@+id/courses_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/university_icon_text"
+                    android:text="@string/courses_amount_full"/>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        style="@style/icon_university"
+                        android:src="@drawable/ic_city"
+                        android:id="@+id/imageView4" />
+
+                    <TextView
+                        android:id="@+id/city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/university_icon_text"
+                        android:text="@string/city"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_overlay"/>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/university_description"
+                android:layout_marginTop="10dp"
+                style="@style/TextAppearance.AppCompat.Body1" />
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_overlay"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

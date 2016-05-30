@@ -52,6 +52,15 @@
     <string name="university_city">Amsterdam</string>
     <string name="student_amount">16</string>
     <string name="courses_amount">20</string>
-    <string name="title_activity_university_detail">UniversityDetailActivity</string>
+    <string name="title_activity_university_detail">Hogeschool van Amsterdam</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="university_description">A Hogeschool van Amsterdam ou Universidade de Ciências
+        Aplicadas de Amsterdam (HVA) é a maior instituição de ensino superior profissional na
+        Holanda. A HVA oferece principalmente programas de bacharelado, mas também tem uma série de
+        programas (profissionais) de mestrado. Para estudantes de institutos parceiros
+        internacionais, é possível estudar na HVA como estudante de intercâmbio.</string>
+    <string name="description">Descrição</string>
+    <string name="student_amount_full">16\nintercambistas</string>
+    <string name="courses_amount_full">20\ncursos</string>
+    <string name="city"> \nAmsterdam</string>
 </resources>

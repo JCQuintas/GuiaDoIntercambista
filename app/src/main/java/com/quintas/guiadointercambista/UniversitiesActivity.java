@@ -2,6 +2,7 @@ package com.quintas.guiadointercambista;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -54,9 +55,9 @@ public class UniversitiesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-/*                    Intent i = new Intent(UniversitiesActivity.this,
-                            UniversitiesActivity.class);
-                    startActivity(i);*/
+                    Intent i = new Intent(UniversitiesActivity.this,
+                            UniversityDetailActivity.class);
+                    startActivity(i);
             }
         });
 
