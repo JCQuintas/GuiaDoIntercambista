@@ -24,4 +24,5 @@
     <color name="gray_overlay">#10000000</color>
     <color name="gray_light">#FFEEEEEE</color>
     <color name="gray">#FFBBBBBB</color>
+    <color name="gray_dark">#FF747474</color>
 </resources>
