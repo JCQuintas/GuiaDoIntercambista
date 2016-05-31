@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@drawable/pattern_hold_drawable"
-    android:backgroundTint="@color/colorAccentAlternate"
+    android:backgroundTint="@color/colorAccent"
     tools:context="com.quintas.guiadointercambista.SignupActivity">
 
 
@@ -51,11 +51,13 @@
                 android:orientation="vertical"
                 android:paddingBottom="100dp">
 
-                <EditText
+
+                <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/country_select_text" />
-
+                    android:text="@string/select_country"
+                    android:id="@+id/autoCompleteTextView"
+                    android:inputType="text"/>
 
                 <Button
                     android:id="@+id/country_select_button"

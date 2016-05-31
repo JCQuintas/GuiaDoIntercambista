@@ -65,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/ratingBar"
-                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
                     android:layout_marginTop="10dp"
                     android:numStars="5"
                     android:stepSize="10"
@@ -75,7 +75,17 @@
 
             </LinearLayout>
 
-
+            <ImageButton
+                android:id="@+id/favorite_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_bookmark_border"
+                android:tint="@color/gray"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
 

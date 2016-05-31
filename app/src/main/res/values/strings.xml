@@ -73,4 +73,5 @@
     <string name="university_email">international@hva.nl</string>
     <string name="university_web">www.hva.nl</string>
     <string name="university_doc">Documentos\nNecessários</string>
+    <string name="select_country">Selecione o país</string>
 </resources>
