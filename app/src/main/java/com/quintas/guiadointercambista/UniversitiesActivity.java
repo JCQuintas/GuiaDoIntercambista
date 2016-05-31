@@ -112,7 +112,7 @@ class CustomUniversityAdapter extends ArrayAdapter<University>{
             row = inflater.inflate(layoutResourceId, parent, false);
 
             holder = new UniversityHolder();
-            holder.studentAmount = (TextView)row.findViewById(R.id.student_amount);
+//            holder.studentAmount = (TextView)row.findViewById(R.id.student_amount);
 
             row.setTag(holder);
         }
@@ -122,7 +122,7 @@ class CustomUniversityAdapter extends ArrayAdapter<University>{
         }
 
         University university = data[position];
-        holder.studentAmount.setText(String.valueOf(university.studentAmount));
+//        holder.studentAmount.setText(String.valueOf(university.studentAmount));
 
         return row;
     }

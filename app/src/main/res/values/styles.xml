@@ -28,14 +28,15 @@
 
     <style name="icon_university">
         <item name="android:tint">@color/gray</item>
-        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:layout_weight">1</item>
     </style>
 
     <style name="university_icon_text">
-        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
         <item name="android:textColor">@color/black_text_medium</item>
         <item name="android:textSize">15sp</item>
         <item name="android:textAlignment">center</item>
+
     </style>
 </resources>

@@ -28,89 +28,141 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/university_name"
-                    style="@style/TextAppearance.AppCompat.Title"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="@string/university_name"
-                    android:textSize="25sp"/>
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/university_profile"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/hva_logo"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/university_name"
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/university_name"
+                        android:textSize="25sp"
+                        android:layout_weight="1"/>
+
+
+                    <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_bookmark_border"
+                        android:tint="@color/colorAccent"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        />
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:orientation="horizontal"
-                    android:baselineAligned="false">
+                    android:layout_marginTop="20dp">
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:baselineAligned="false"
+                        android:layout_weight="1">
 
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            style="@style/icon_university"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_student"/>
-
-                        <TextView
-                            android:id="@+id/student_amount"
-                            style="@style/university_icon_text"
+                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/student_amount_full"/>
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/icon_university"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_city" />
+
+                            <TextView
+                                android:id="@+id/university_citycity"
+                                android:layout_marginStart="10dp"
+                                style="@style/university_icon_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/university_city"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/icon_university"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_email" />
+
+                            <TextView
+                                android:id="@+id/university_email"
+                                android:layout_marginStart="10dp"
+                                style="@style/university_icon_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/university_email"
+                                android:autoLink="email"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                style="@style/icon_university"
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@drawable/ic_language" />
+
+                            <TextView
+                                android:id="@+id/university_web"
+                                android:layout_marginStart="10dp"
+                                style="@style/university_icon_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/university_web"
+                                android:autoLink="web"/>
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/imageView3"
                             style="@style/icon_university"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_course" />
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_playlist_add" />
 
                         <TextView
-                            android:id="@+id/courses_amount"
+                            android:id="@+id/university_doc"
                             style="@style/university_icon_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/courses_amount_full"/>
+                            android:text="@string/university_doc"/>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="80dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/imageView4"
-                            style="@style/icon_university"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_city" />
-
-                        <TextView
-                            android:id="@+id/city"
-                            style="@style/university_icon_text"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/city"/>
-
-                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -164,7 +216,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rate_this_university"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:layout_gravity="center"/>
 
                 <RatingBar
