@@ -75,15 +75,14 @@
 
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/favorite_btn"
+            <ImageView
+                android:id="@+id/favorite_view"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:src="@drawable/ic_bookmark_border"
                 android:tint="@color/gray"
                 android:scaleType="fitCenter"
                 android:layout_marginStart="10dp"
-                android:background="@android:color/transparent"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true" />
 
