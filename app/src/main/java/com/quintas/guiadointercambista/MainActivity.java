@@ -85,7 +85,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_my_profile) {
-            // Handle the camera action
+            Intent i = new Intent(MainActivity.this,
+                    UserPanelActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_countries) {
 
         } else if (id == R.id.nav_my_friends) {
