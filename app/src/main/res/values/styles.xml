@@ -29,22 +29,23 @@
     <style name="icon_university">
         <item name="android:tint">@color/gray</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_weight">1</item>
+        <item name="android:layout_weight">0</item>
     </style>
 
-    <style name="university_icon_text">
+    <style name="university_icon_text" parent="TextAppearance.AppCompat.Small">
         <item name="android:layout_gravity">center</item>
         <item name="android:textColor">@color/black_text_medium</item>
-        <item name="android:textSize">16sp</item>
         <item name="android:textAlignment">center</item>
     </style>
 
-    <style name="profile_text_body">
+    <style name="profile_text_body" parent="TextAppearance.AppCompat.Small">
         <item name="android:textColor">@color/black_text_medium</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:layout_marginTop">10dp</item>
         <item name="android:layout_marginStart">5dp</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:textAlignment">textStart</item>
         <item name="android:maxLength">40</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:maxLines">2</item>
     </style>
 </resources>

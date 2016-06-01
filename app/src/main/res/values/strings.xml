@@ -77,4 +77,6 @@
     <string name="title_activity_user_panel">UserPanelActivity</string>
     <string name="user_description">Faço design de produto e moro em Amsterdam. Aceito couch, então podem pedir. :)</string>
     <string name="user_city">Amsterdam</string>
+    <string name="menu_string_country">Holanda</string>
+    <string name="menu_string_university">Universidades</string>
 </resources>

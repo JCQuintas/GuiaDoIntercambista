@@ -88,8 +88,10 @@ public class MainActivity extends AppCompatActivity
             Intent i = new Intent(MainActivity.this,
                     UserPanelActivity.class);
             startActivity(i);
-        } else if (id == R.id.nav_countries) {
-
+        } else if (id == R.id.nav_university) {
+            Intent i = new Intent(MainActivity.this,
+                    UniversitiesActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_my_friends) {
 
         } else if (id == R.id.nav_settings) {

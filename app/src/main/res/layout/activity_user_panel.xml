@@ -30,6 +30,11 @@
                 android:background="@drawable/marcela_drawable_full"
                 app:layout_collapseMode="parallax"/>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_overlay"/>
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"

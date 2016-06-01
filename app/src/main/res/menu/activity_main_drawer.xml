@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="none">
         <item
             android:id="@+id/nav_my_profile"
             android:icon="@drawable/ic_menu_my_profile"
@@ -14,10 +14,52 @@
             android:id="@+id/nav_my_friends"
             android:icon="@drawable/ic_menu_my_friends"
             android:title="@string/menu_string_my_friends" />
+    </group>
+
+    <group
+        android:id="@+id/group_country">
+        <item
+            android:title="@string/menu_string_country">
+            <menu>
+                <item
+                    android:id="@+id/nav_university"
+                    android:icon="@drawable/ic_student"
+                    android:title="Universidades" />
+                <item
+                    android:id="@+id/nav_services"
+                    android:icon="@drawable/ic_local_offer"
+                    android:title="Serviços" />
+                <item
+                    android:id="@+id/nav_cities"
+                    android:icon="@drawable/ic_city"
+                    android:title="Cidades" />
+                <item
+                    android:id="@+id/nav_hollydays"
+                    android:icon="@drawable/ic_event"
+                    android:title="Eventos e Feriados" />
+                <item
+                    android:id="@+id/nav_idiom"
+                    android:icon="@drawable/ic_translate"
+                    android:title="Idioma" />
+                <item
+                    android:id="@+id/nav_weather"
+                    android:icon="@drawable/ic_sunny"
+                    android:title="Clima" />
+            </menu>
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/group_config">
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_menu_settings"
             android:title="@string/menu_string_settings" />
+
     </group>
+
+
+
 
 </menu>

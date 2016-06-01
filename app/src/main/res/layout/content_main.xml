@@ -25,9 +25,12 @@
                 android:layout_height="200dp"
                 android:src="@drawable/netherlands"
                 android:scaleType="centerCrop"
-                android:tint="@color/black_overlay"
                 />
 
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:background="@drawable/gradient_overlay_higher"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,10 +42,10 @@
                     android:src="@drawable/ic_windmill"
                     android:id="@+id/country_image"
                     android:layout_gravity="start|center_vertical"
-                    android:layout_marginStart="25dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="25dp"/>
+                    android:layout_marginBottom="16dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"

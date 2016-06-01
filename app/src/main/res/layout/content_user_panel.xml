@@ -15,75 +15,94 @@
         android:padding="16dp"
         android:clipToPadding="false">
 
+        <TextView
+            android:id="@+id/title_study"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formação"
+            android:textColor="@color/black_text_hard"/>
 
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/title_study"
-                style="@style/TextAppearance.AppCompat.Medium"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Formação"
-                android:textColor="@color/black_text_hard"
-                android:textStyle="bold"/>
+                android:orientation="vertical"
+                android:layout_weight="1">
 
-            <ImageView
-                android:id="@+id/home_icon"
-                style="@style/icon_university"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home"
-                android:layout_marginTop="10dp"
-                android:layout_below="@id/title_study"/>
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/university_brazil"
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                style="@style/profile_text_body"
-                android:text="Universidade Federal do Rio de Janeiro"
-                android:layout_below="@id/title_study"
-                android:layout_toEndOf="@id/home_icon"
-                />
+                    <ImageView
+                        android:id="@+id/home_icon"
+                        style="@style/icon_university"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_home"/>
 
-            <ImageView
-                android:id="@+id/exchange_icon"
-                style="@style/icon_university"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_room"
-                android:layout_marginTop="10dp"
-                android:layout_below="@id/home_icon"/>
+                    <TextView
+                        android:id="@+id/university_brazil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/profile_text_body"
+                        android:text="Universidade Federal do Rio de Janeiro"
+                        />
 
-            <TextView
-                android:id="@+id/university_exchange"
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                style="@style/profile_text_body"
-                android:text="Hogeschool van Amsterdam"
-                android:layout_below="@id/university_brazil"
-                android:layout_toEndOf="@id/exchange_icon"
-                />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/exchange_icon"
+                        style="@style/icon_university"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_room"/>
+
+                    <TextView
+                        android:id="@+id/university_exchange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/profile_text_body"
+                        android:text="Hogeschool van Amsterdam"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
             <View
+                android:id="@+id/viewborder"
                 android:layout_width="1dp"
-                android:layout_height="70dp"
+                android:layout_height="match_parent"
                 android:background="@color/gray_overlay"
-                android:layout_toStartOf="@+id/layout_public"
-                android:layout_below="@id/title_study"
+                android:layout_weight="0"
                 android:layout_marginEnd="10dp"/>
 
             <LinearLayout
+                android:layout_gravity="center"
                 android:id="@+id/layout_public"
-                android:layout_width="60dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
                 android:orientation="vertical"
-                android:layout_alignParentEnd="true"
-                android:layout_centerInParent="true">
+                android:layout_weight="0">
 
                 <ImageView
                     android:id="@+id/university_public"
@@ -91,12 +110,11 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/ic_public"
-                    android:tint="@color/colorAccent"
-                    android:layout_marginTop="20dp" />
+                    android:tint="@color/colorAccent" />
 
                 <TextView
                     android:id="@+id/public_text"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:layout_marginTop="5dp"
@@ -107,7 +125,7 @@
 
             </LinearLayout>
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,11 +138,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sobre Marcela"
-                android:textColor="@color/black_text_hard"
-                android:textStyle="bold"/>
+                android:textColor="@color/black_text_hard"/>
 
             <TextView
-                style="@style/TextAppearance.AppCompat.Medium"
+                style="@style/TextAppearance.AppCompat.Small"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -187,7 +204,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/gray_light"
             android:orientation="vertical"
             android:layout_marginTop="20dp"
@@ -201,38 +218,20 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginStart="16dp"
                 android:text="Progresso"
-                android:textColor="@color/black_text_hard"
-                android:textStyle="bold"/>
+                android:textColor="@color/black_text_hard"/>
 
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="4"
-                android:rowCount="5"
+            <GridView
+                android:id="@+id/gridview"
                 android:layout_margin="16dp"
-                android:orientation="horizontal"
-                android:useDefaultMargins="true"
-                android:alignmentMode="alignBounds">
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-                <include layout="@layout/badge_item"/>
-
-            </GridLayout>
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:columnWidth="90dp"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="20dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="spacingWidth"
+                android:gravity="center"
+                android:scrollbars="none"/>
 
         </LinearLayout>
 

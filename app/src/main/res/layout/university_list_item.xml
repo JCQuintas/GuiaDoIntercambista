@@ -22,8 +22,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/university_drawable"
-                android:scaleType="centerCrop"
-                android:tint="@color/black_overlay"/>
+                android:scaleType="centerCrop"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/gradient_overlay"/>
 
             <TextView
                 android:id="@+id/university_name"
