@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorLink">@color/colorAccentDark</item>
     </style>
 
     <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -32,7 +33,13 @@
         <item name="android:layout_weight">0</item>
     </style>
 
-    <style name="university_icon_text" parent="TextAppearance.AppCompat.Small">
+    <style name="university_icon_text" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black_text_medium</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="university_icon_text_small" parent="TextAppearance.AppCompat.Small">
         <item name="android:layout_gravity">center</item>
         <item name="android:textColor">@color/black_text_medium</item>
         <item name="android:textAlignment">center</item>

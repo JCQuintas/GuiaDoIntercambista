@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0277BD</color>
-    <color name="colorPrimary2">#007acc</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimaryLight">#4DB6AC</color>
 
-    <color name="colorPrimaryDark">#01579B</color>
-    <color name="colorPrimaryDark2">#0072b2</color>
+    <color name="colorAccent">#FFC400</color>
+    <color name="colorAccentDark">#FFAB00</color>
+    <color name="colorAccentLight">#FFD740</color>
 
-    <color name="colorPrimaryLight">#039BE5</color>
-
-    <color name="colorAccent">#00C853</color>
-    <color name="colorAccentLight">#69F0AE</color>
-    <color name="colorAccentAlternate">#FFC400</color>
+    <color name="colorAccentAlternate">#2979FF</color>
+    <color name="colorAccentAlternateDark">#2962FF</color>
+    <color name="colorAccentAlternateLight">#448AFF</color>
 
     <color name="white">#FFFFFF</color>
     <color name="facebookBlue">#3B5999</color>
     <color name="teal">#009688</color>
-    <color name="orange">#FF9800
-    </color>
+    <color name="blue">#2196F3</color>
     <color name="red">#f44336</color>
     <color name="black">#000000</color>
 

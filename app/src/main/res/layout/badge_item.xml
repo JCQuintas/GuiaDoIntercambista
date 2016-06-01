@@ -24,7 +24,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/circle"
-                android:tint="@color/orange"
+                android:tint="@color/colorAccentAlternateDark"
                 android:layout_gravity="center"/>
             <ImageView
                 android:layout_width="25dp"
@@ -56,7 +56,7 @@
                 android:id="@+id/progressBar"
                 android:indeterminate="false"
                 android:progressBackgroundTint="@color/gray_dark"
-                android:progressTint="@color/orange"
+                android:progressTint="@color/colorAccentAlternateDark"
                 android:progress="40" />
 
             <View

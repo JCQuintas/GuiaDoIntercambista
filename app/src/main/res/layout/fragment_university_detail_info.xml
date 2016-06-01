@@ -56,7 +56,7 @@
                         android:layout_width="32dp"
                         android:layout_height="32dp"
                         android:src="@drawable/ic_bookmark_border"
-                        android:tint="@color/colorAccent"
+                        android:tint="@color/colorAccentDark"
                         android:scaleType="fitCenter"
                         android:background="@android:color/transparent"
                         />
@@ -156,7 +156,7 @@
 
                         <TextView
                             android:id="@+id/university_doc"
-                            style="@style/university_icon_text"
+                            style="@style/university_icon_text_small"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/university_doc"/>
@@ -551,7 +551,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/read_more"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@color/colorAccentDark"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"

@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/mainListView"
             android:entries="@array/country_subcategories"
-            android:layout_margin="10dp"
+            android:layout_margin="16dp"
             android:background="@color/white"
             android:clipToPadding="false"
             android:elevation="2dp"/>

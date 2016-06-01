@@ -52,12 +52,17 @@
                 android:paddingBottom="100dp">
 
 
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
                 <AutoCompleteTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/select_country"
+                    android:hint="@string/select_country"
                     android:id="@+id/autoCompleteTextView"
                     android:inputType="text"/>
+
+                </android.support.design.widget.TextInputLayout>
 
                 <Button
                     android:id="@+id/country_select_button"
