@@ -79,4 +79,12 @@
     <string name="user_city">Amsterdam</string>
     <string name="menu_string_country">Holanda</string>
     <string name="menu_string_university">Universidades</string>
+    <string name="title_activity_friends">Meus Amigos</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="amanda">Amanda</string>
+    <string name="marcos">Marcos</string>
+    <string name="name">Nome</string>
+    <string name="country_city">Pais - Cidade</string>
+    <string name="distance">5 Km</string>
+    <string name="you">Você está aqui!</string>
 </resources>

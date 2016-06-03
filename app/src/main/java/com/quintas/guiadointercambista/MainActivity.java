@@ -93,9 +93,13 @@ public class MainActivity extends AppCompatActivity
                     UniversitiesActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_my_friends) {
-
+            Intent i = new Intent(MainActivity.this,
+                    FriendsActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_settings) {
-
+//            Intent i = new Intent(MainActivity.this,
+//                    MapsActivity.class);
+//            startActivity(i);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

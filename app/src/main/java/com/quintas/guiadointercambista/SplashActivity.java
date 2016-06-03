@@ -32,14 +32,15 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 try {
                     super.run();
-                    sleep(2000); //Delay of 3 seconds
+                    sleep(500); //Delay of 3 seconds
                 } catch (Exception e) {
 
                 } finally {
 
                     Intent i = new Intent(SplashActivity.this,
 //                            MainActivity.class);
-                            SignupActivity.class);
+//                            SignupActivity.class);
+                            FriendsActivity.class);
                     startActivity(i);
                     finish();
                 }
