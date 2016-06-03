@@ -34,18 +34,21 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom">
+                android:layout_gravity="bottom"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp">
 
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:src="@drawable/ic_windmill"
+                    android:tint="@color/colorAccentLight"
                     android:id="@+id/country_image"
+                    android:layout_marginEnd="16dp"
                     android:layout_gravity="start|center_vertical"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="16dp"/>
+                    android:visibility="gone"/>
 
                 <TextView
                     android:layout_width="wrap_content"
