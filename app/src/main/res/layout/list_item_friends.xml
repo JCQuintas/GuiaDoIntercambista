@@ -34,7 +34,13 @@
             android:text="@string/country_city"/>
 
     </LinearLayout>
-
+    <ImageView
+        android:id="@+id/friend_couch"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/weekend"
+        android:tint="@color/colorPrimary"
+        />
     <TextView
         android:id="@+id/friend_distance"
         android:layout_width="0dp"
